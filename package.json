@@ -1,0 +1,37 @@
+{
+  "name": "diretorio-ldap-api",
+  "version": "1.0.0",
+  "description": "API Express protegida por JWT para consultar um diretório LDAP e exportar buscas para Excel (.xlsx).",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "ldap:fake": "node scripts/servidor-ldap-fake.js",
+    "token": "node scripts/gerar-token.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "ldap",
+    "jwt",
+    "express",
+    "exceljs",
+    "xlsx",
+    "nodejs"
+  ],
+  "author": "sidsidoso",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidsidoso/diretorio-ldap-api.git"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "ldapjs": "3.0.7"
+  }
+}
